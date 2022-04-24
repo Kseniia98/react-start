@@ -1,0 +1,13 @@
+.profile>div{
+  color: rgb(169, 97, 236);
+}
+
+.profile a>img{
+  width: 100px;
+  height: 100px;
+}
+
+.profile>div:nth-child(2){
+  color: rgb(129, 25, 189);
+  font-weight: bold;
+}
