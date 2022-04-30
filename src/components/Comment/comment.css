@@ -1,17 +1,18 @@
-.commentForm{
-  margin: 50px auto;
-  width: 400px;
-}
-
-.commentForm>textarea{
-  width: 100%;
-  min-height: 50px;
+.comment{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
 }
 
 .commentItems{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.commentItems>button{
-max-height: 25px;}
+.commentItems>div{
+  margin-left: 15px;
+}
