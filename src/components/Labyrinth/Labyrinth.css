@@ -1,0 +1,16 @@
+.labyrinth{
+  background-color: rgb(252, 247, 232);
+  margin: 20px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.labyrinth>div{
+  margin-bottom: 20px;
+  color: rgb(122, 89, 48);
+}
+
+.labyrinth>button{
+  margin-left: 10px;
+  padding: 10px;
+}

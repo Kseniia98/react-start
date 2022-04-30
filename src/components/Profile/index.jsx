@@ -8,7 +8,7 @@ class Profile extends React.Component{
   render(){
     return(
       <div className="profile">
-        <Links simpleLink={true}>
+        <Links simpleLink={true} href="#">
           <Avatar src={this.props.user.image} alt={this.props.user.name} />
         </Links>      
         <div>{this.props.user.name}</div>

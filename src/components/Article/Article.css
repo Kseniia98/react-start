@@ -1,0 +1,20 @@
+.article{
+  max-width: 300px;
+  background-color: rgb(224, 169, 105);
+  border: 5px solid;
+}
+
+.article>img{
+  width: 90%;
+  height: 200px;
+  margin-top: 20px;
+  border: 5px solid;
+}
+
+.article>button{
+  margin-bottom: 20px;
+  padding: 8px;
+  background-color: rgb(27, 24, 20);
+  color: rgb(243, 223, 198);
+  font-weight: bold;
+}

@@ -7,19 +7,40 @@ class Counter extends React.Component{
     this.state = {counter: 0};
   }
 
-  buttonClick = ()=>{
+  buttonClickPLus = ()=>{
     this.setState((state)=>{
       return {
       ...state,
       counter: state.counter + 1
-    }})
+      }
+    })
+  }
+
+  buttonClickMinus = ()=>{
+    this.setState((state)=>{
+      return{
+        ...state,
+        counter: state.counter - 1
+      }
+    })
+  }
+
+  buttonReset = ()=>{
+    this.setState((state)=>{
+      return{
+        ...state,
+        counter: 0
+      }
+    })
   }
 
   render(){
     return (
       <div>
         <div>{this.state.counter}</div>
-        <button onClick={this.buttonClick}> +1 </button>
+        <button onClick={this.buttonClickPLus}> +1 </button>
+        <button onClick={this.buttonClickMinus}> -1 </button>
+        <button onClick={this.buttonReset}> Reset </button>
       </div>
     )
   }

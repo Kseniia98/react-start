@@ -6,6 +6,9 @@ import Home from './pages/Home';
 import Counter from './components/Counter';
 import Profile from './components/Profile';
 import Comment from './components/Comment';
+import Slider from './components/Slider';
+import Labyrinth from './components/Labyrinth';
+import Articles from './components/Articles';
 
 class App extends React.Component {
 
@@ -32,7 +35,10 @@ class App extends React.Component {
         <Profile user={this.state.user}/>
         <Home />
         <About />
+        <Labyrinth />
         <Counter />
+        <Articles />
+        <Slider />
         <Comment user={this.state.user}/>
       </div>
     );
