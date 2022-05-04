@@ -20,37 +20,16 @@ class Labyrinth extends React.Component{
   }
   
  
-  randomEvents1 = () => {
-    this.setState((state) =>{
-      return{  
-        ...state,      
-        currentEvent: random(),
-        clicks: state.clicks+1,
-        route: 'налево',
-      }
-    })
-    console.log(this.state.clicks);
-  }
+  randomEvents = (event) => {
 
-  randomEvents2 = () => {
-    this.setState((state) =>{
-      return{  
-        ...state,      
-        currentEvent: random(),
-        clicks: state.clicks+1,
-        route: 'прямо',
-      }
-    })
-    console.log(this.state.clicks);
-  }
+    const value = event.target.dataset.route;
 
-  randomEvents3 = () => {
     this.setState((state) =>{
       return{  
         ...state,      
         currentEvent: random(),
         clicks: state.clicks+1,
-        route: 'направо',
+        route: value,
       }
     })
     console.log(this.state.clicks);
@@ -65,9 +44,9 @@ class Labyrinth extends React.Component{
         <div>
           Перед собой вы видите {events[this.state.currentEvent]}
         </div>
-        <button onClick={this.randomEvents1}>Пойти налево</button>
-        <button onClick={this.randomEvents2}>Пойти прямо</button>
-        <button onClick={this.randomEvents3}>Пойти направо</button>
+        <button data-route="налево" onClick={this.randomEvents}>Пойти налево</button>
+        <button data-route="прямо" onClick={this.randomEvents}>Пойти прямо</button>
+        <button data-route="направо" onClick={this.randomEvents}>Пойти направо</button>
       </div>
     )
   }
